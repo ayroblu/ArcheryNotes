@@ -9,11 +9,14 @@ I want this to replace my ArcheryScorer app, just to show off my react native sk
         * I think I'd only recommend this if its super smooth + Drawer works the way native does
 2. redux:add
 3. eslint
+    * flow?
 4. testing
+    * flow?
 5. release (android)
 6. fonts (maybe?)
 7. Show versions page
 8. Show dev debugger - redux-devtools
+9. Add kotlin + native bridge stuff
 
 Just an old package:
 
