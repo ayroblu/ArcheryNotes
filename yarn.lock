@@ -3015,8 +3015,8 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
 metro-bundler@^0.7.4:
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/metro-bundler/-/metro-bundler-0.7.6.tgz#696c450802531dece267e400bd03923ea4ac7420"
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/metro-bundler/-/metro-bundler-0.7.8.tgz#5845cf49f877ea0f7694e9177e19e5f447ca3d86"
   dependencies:
     absolute-path "^0.0.0"
     async "^2.4.0"
@@ -3670,9 +3670,9 @@ react-native-version-number@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/react-native-version-number/-/react-native-version-number-0.1.2.tgz#03605e52f30d15a94884fee17fd0559c01b337d0"
 
-react-native@0.46.0:
-  version "0.46.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.46.0.tgz#07dd7045ad905433fe5256d32023bbd794f7d1f5"
+react-native@0.46.1:
+  version "0.46.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.46.1.tgz#a3f81e6d6c12adac088010ef341f27efa1e66d02"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"

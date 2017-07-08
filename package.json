@@ -5,15 +5,15 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"redux:add": "node custom-scripts/redux.js",
-    "release:android": "cd android && ./gradlew assembleRelease",
-    "lint": "eslint .",
+		"release:android": "cd android && ./gradlew assembleRelease",
+		"lint": "eslint .",
 		"cdapk": "cd android/app/build/outputs/apk",
 		"test": "jest"
 	},
 	"dependencies": {
 		"moment": "^2.18.1",
 		"react": "16.0.0-alpha.12",
-		"react-native": "0.46.0",
+		"react-native": "0.46.1",
 		"react-native-vector-icons": "^4.2.0",
 		"react-native-version-number": "^0.1.2",
 		"react-navigation": "^1.0.0-beta.11",
