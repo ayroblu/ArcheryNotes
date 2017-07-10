@@ -3,7 +3,8 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "plugins": [
         "react",
@@ -16,6 +17,7 @@
     "rules": {
         // overrides
         "no-console": 0,
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "react-native/no-unused-styles": 2
     }
 }
