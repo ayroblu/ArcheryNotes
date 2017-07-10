@@ -1,33 +1,38 @@
-import React, {Component} from 'react'
-import { AppRegistry } from 'react-native'
 //import { StackNavigator, DrawerNavigator, addNavigationHelpers } from 'react-navigation'
-//import { Navigation } from 'react-native-navigation' // now react navigation
+import { Navigation } from 'react-native-navigation'
 import configureStore from './store'
 import {Provider} from 'react-redux'
 import * as db from './db'
-//import {navigatorStyle} from './config'
+import {navigatorStyle} from './config'
 
 import Home from './containers/Home'
+import Drawer from './containers/Drawer'
 
 db.firstTimeCheck()
 
 const store = configureStore()
 
-const ArcheryNotes = DrawerNavigator(StackNavigator({
-  Home: { screen: Home },
-}), {
-  drawerWidth: 200
-, drawerPosition: 'left'
-})
+// register all screens of the app (including internal ones)
+Navigation.registerComponent('arn.Home', ()=>Home, store, Provider);
+Navigation.registerComponent('arn.Drawer', ()=>Drawer, store, Provider);
 
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <ArcheryNotes />
-      </Provider>
-    );
-  }
+// start the app
+const settings = db.getSettings()
+const screen = settings.username ? {
+  screen: 'arn.Home'
+, navigatorStyle
+} : {
+  screen: 'arn.Home'
+, navigatorStyle
 }
-
-AppRegistry.registerComponent('ArcheryNotes', ()=>App)
+Navigation.startSingleScreenApp({
+  screen,
+  drawer: {
+    left: {
+      screen: 'arn.Drawer'
+    }
+  },
+  appStyle: {
+    orientation: 'portrait' //'auto', 'landscape', 'portrait'
+  },
+})

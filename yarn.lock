@@ -3875,9 +3875,9 @@ readable-stream@~1.1.8, readable-stream@~1.1.9:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-realm@realm/realm-js:
+realm@^1.8.3:
   version "1.8.3"
-  resolved "https://codeload.github.com/realm/realm-js/tar.gz/516c39deaf80e5fb1c92a1e845d7e5663f4287a4"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-1.8.3.tgz#e385421b16cb03a21699ecf9072956b43200df25"
   dependencies:
     extract-zip "^1.6.0"
     ini "^1.3.4"
