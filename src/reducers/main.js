@@ -1,6 +1,7 @@
 import { SET, RESET } from '../types/main'
 
 const initialState = {
+  text: 'thing'
 }
 
 export default function reducer(state=initialState, action) {
