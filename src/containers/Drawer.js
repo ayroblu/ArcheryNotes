@@ -21,17 +21,16 @@ class Drawer extends Component {
   _goTo(screen){
     // apparently normal navigator ONLY works in android
     // https://github.com/wix/react-native-navigation/issues/1143
-    const {navigator} = Platform.OS==='ios' ? this.props.user : this.props
+    const {navigator} = Platform.OS==='ios' ? this.props.main : this.props
     navigator.push({screen: `arn.${screen}`, animationType: 'slide-horizontal'})
     navigator.toggleDrawer({side: 'left'})
   }
   _resetTo(screen){
-    const {navigator} = Platform.OS==='ios' ? this.props.user : this.props
+    const {navigator} = Platform.OS==='ios' ? this.props.main : this.props
     navigator.resetTo({screen: `arn.${screen}`})
     navigator.toggleDrawer({side: 'left'})
   }
   render() {
-    const {username} = this.props.user
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.line} onPress={()=>this._goTo('About')}>
@@ -51,7 +50,7 @@ const styles = StyleSheet.create({
 })
 
 export default connect(state=>({
-  user: state.user
+  main: state.main
 }), dispatch=>({
-  userActions: bindActionCreators(userActions, dispatch)
+  mainActions: bindActionCreators(mainActions, dispatch)
 }))(Drawer)
