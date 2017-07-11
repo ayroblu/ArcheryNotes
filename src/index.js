@@ -20,10 +20,12 @@ Navigation.registerComponent('arn.Drawer', ()=>Drawer, store, Provider);
 const settings = db.getSettings()
 const screen = settings.username ? {
   screen: 'arn.Home'
+, title: 'Home'
 , navigatorStyle
 } : {
   screen: 'arn.Home'
 , navigatorStyle
+, title: 'Home'
 }
 Navigation.startSingleScreenApp({
   screen,
