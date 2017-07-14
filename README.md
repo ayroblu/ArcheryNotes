@@ -3,11 +3,8 @@ Archery Notes
 
 I want this to replace my ArcheryScorer app, just to show off my react native skills
 
-### Note
-* This is broken / will not compile, wait for react native 46.1 then retry
-* Also can't seem to run react-native link?
-
-### Setup
+Setup
+-----
 1. react-native-navigation - super buggy, many things missing, native.
     * react-navigation - JS only, still pretty quick and super flexible (better?)
         * I think I'd only recommend this if its super smooth + Drawer works the way native does

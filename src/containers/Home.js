@@ -2,22 +2,21 @@ import React, {Component} from 'react'
 import {
   View,
   Text,
-  Image,
   StyleSheet,
 } from 'react-native'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
+import {navButtons, onNavigatorEvent} from '../utils/nav'
 import * as mainActions from '../actions/main'
 import * as theme from '../theme'
+import {textStyle} from '../config'
 
 class Home extends Component {
-  static navigationOptions = {
-    title: 'Welcome',
-    drawerLabel: 'Home',
-    drawerIcon: ({ tintColor }) => (
-      <View><Text>Thing</Text></View>
-    ),
+  static navigatorButtons = navButtons
+  componentWillMount(){
+    this.props.mainActions.set({navigator: this.props.navigator})
+    this.props.navigator.setOnNavigatorEvent(onNavigatorEvent.bind(this));
   }
   render() {
     const {text} = this.props.main
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
   , flex: 1
   }
 , text: {
-    color: theme.text
+    ...textStyle
   }
 })
 

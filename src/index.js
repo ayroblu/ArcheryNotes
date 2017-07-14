@@ -5,27 +5,24 @@ import {Provider} from 'react-redux'
 import * as db from './db'
 import {navigatorStyle} from './config'
 
-import Home from './containers/Home'
+import About from './containers/About'
 import Drawer from './containers/Drawer'
+import Home from './containers/Home'
 
 db.firstTimeCheck()
 
 const store = configureStore()
 
 // register all screens of the app (including internal ones)
-Navigation.registerComponent('arn.Home', ()=>Home, store, Provider);
+Navigation.registerComponent('arn.About', ()=>About, store, Provider);
 Navigation.registerComponent('arn.Drawer', ()=>Drawer, store, Provider);
+Navigation.registerComponent('arn.Home', ()=>Home, store, Provider);
 
 // start the app
-const settings = db.getSettings()
-const screen = settings.username ? {
+const screen = {
   screen: 'arn.Home'
 , title: 'Home'
 , navigatorStyle
-} : {
-  screen: 'arn.Home'
-, navigatorStyle
-, title: 'Home'
 }
 Navigation.startSingleScreenApp({
   screen,

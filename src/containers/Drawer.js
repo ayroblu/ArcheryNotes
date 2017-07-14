@@ -1,21 +1,17 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import {
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
-  TouchableNativeFeedback,
   Platform,
-  Image,
 } from 'react-native'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
-import * as db from '../db'
 import * as mainActions from '../actions/main'
+import {textStyle} from '../config'
 import * as theme from '../theme'
-import {navigatorStyle} from '../config'
 
 class Drawer extends Component {
   _goTo(screen){
@@ -34,7 +30,7 @@ class Drawer extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.line} onPress={()=>this._goTo('About')}>
-          <Text style={styles.lineText}>About App</Text>
+          <Text style={styles.lineText}>About</Text>
         </TouchableOpacity>
       </View>
     )
@@ -46,6 +42,20 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     paddingTop: Platform.select({ios: 20, android: 0})
+  },
+  line: {
+    marginLeft: 20
+  , marginRight: 20
+  , paddingLeft: 40
+  , padding: 20
+  , borderBottomWidth: 1
+  , borderColor: '#ddd'
+  , flexDirection: 'row'
+  , alignItems: 'center'
+  },
+  lineText: {
+    ...textStyle
+  , fontSize: 20
   },
 })
 

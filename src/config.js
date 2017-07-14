@@ -6,4 +6,8 @@ export const navigatorStyle = {
 , navBarButtonColor: 'white', statusBarTextColorScheme: 'light'
 , statusBarColor: theme.primary, screenBackgroundColor: theme.background
 }
-
+export const textStyle = {
+  fontSize: 18
+, fontWeight: '300'
+, color: theme.text
+}
