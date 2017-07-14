@@ -1,3 +1,4 @@
+// @flow
 import React, {Component} from 'react'
 import {
   View,
@@ -26,6 +27,8 @@ class Home extends Component {
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
         <Text style={styles.text}>{text}</Text>
+        <Text style={styles.text}>Archery Notes</Text>
+        <Text style={styles.text}>Probably should add a score card here</Text>
       </View>
     )
   }
