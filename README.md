@@ -21,46 +21,6 @@ Setup
 8. Show dev debugger - redux-devtools
 9. Add kotlin + native bridge stuff
 
-Just an old package:
-
-```
-		"redux:add": "node custom-scripts/redux.js",
-		"release:android": "cd android && ./gradlew assembleRelease",
-    "lint": "eslint .",
-		"cdapk": "cd android/app/build/outputs/apk"
-	},
-	"dependencies": {
-		"babel-eslint": "^7.2.3",
-		"eslint": "^4.1.1",
-		"eslint-plugin-import": "^2.7.0",
-		"eslint-plugin-jsx-a11y": "^6.0.2",
-		"eslint-plugin-react": "^7.1.0",
-		"eslint-plugin-react-native": "^2.3.2",
-		"moment": "^2.18.1",
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.45.1",
-		"react-native-image-picker": "^0.26.3",
-		"react-native-navigation": "^1.1.112",
-		"react-native-swiper": "^1.5.4",
-		"react-native-vector-icons": "^4.2.0",
-		"react-native-version-number": "^0.1.2",
-		"react-redux": "^5.0.5",
-		"realm": "^1.8.1",
-		"redux": "^3.7.0"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.0.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		"preset": "react-native"
-	},
-	"rnpm": {
-		"assets": [
-			"./fonts"
-		]
-	}
-}
-```
+Notes
+-----
+* StatusBar: https://github.com/wix/react-native-navigation/issues/453

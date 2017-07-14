@@ -1,8 +1,8 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import reducers from './reducers'
+import DevTools from './components/DevTools'
 //import createLogger from 'redux-logger'
 //import createSagaMiddleware from 'redux-saga'
-//import devTools from 'remote-redux-devtools'
 
 //const logger = createLogger()
 //const sagaMiddleware = createSagaMiddleware()
@@ -17,6 +17,7 @@ export default function configureStore(initialState = {}) {
   const enhancers = [
     applyMiddleware(...middlewares)
   //, devTools()
+  , DevTools.instrument()
   ]
 
   const store = createStore(

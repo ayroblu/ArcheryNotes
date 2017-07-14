@@ -3,10 +3,12 @@ import {
   View,
   Text,
   StyleSheet,
+  StatusBar,
 } from 'react-native'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
+import DevTools from '../components/DevTools'
 import {navButtons, onNavigatorEvent} from '../utils/nav'
 import * as mainActions from '../actions/main'
 import * as theme from '../theme'
@@ -22,7 +24,7 @@ class Home extends Component {
     const {text} = this.props.main
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Hello, Navigation!</Text>
+        <StatusBar barStyle="light-content" />
         <Text style={styles.text}>{text}</Text>
       </View>
     )
@@ -31,8 +33,7 @@ class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center'
-  , alignItems: 'center'
+    alignItems: 'center'
   , flex: 1
   }
 , text: {
