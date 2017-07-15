@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#555",
+        "fontSize": 18,
+        "fontWeight": "300",
+      }
+    }
+  >
+    thing
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#555",
+        "fontSize": 18,
+        "fontWeight": "300",
+      }
+    }
+  >
+    Archery Notes
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#555",
+        "fontSize": 18,
+        "fontWeight": "300",
+      }
+    }
+  >
+    Probably should add a score card here
+  </Text>
+</View>
+`;
