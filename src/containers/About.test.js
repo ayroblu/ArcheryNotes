@@ -13,11 +13,11 @@ it('renders correctly', ()=>{
   const props = {
     navigator: {
       setTitle(){
-        console.log('set title called')
       }
     }
   }
   const tree = renderer.create(
     <About {...props} />
   )
+  expect(tree).toMatchSnapshot()
 })
