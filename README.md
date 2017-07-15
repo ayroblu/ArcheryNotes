@@ -14,34 +14,15 @@ Setup
 3. eslint
     * flow?
 4. testing
-    * flow?
 5. release (android)
 6. fonts (maybe?)
 7. Show versions page
 8. Show dev debugger - redux-devtools
 9. Add kotlin + native bridge stuff
+10. Code push
+11. Push notifications
+12. iOS Support?
 
 Notes
 -----
 * StatusBar: https://github.com/wix/react-native-navigation/issues/453
-
-### Flow
-* Basically runs a linter, but also type checks. 
-* Need to add comment at the top of page (on all pages)
-
-```javascript
-// @flow
-```
-
-* Need to install and run
-
-```bash
-yarn add --dev flow-bin@0.47.0
-# add flow to package.json script: "flow": "flow"
-npm run flow
-# Stop flow
-npm run flow-stop
-```
-
-* You can for the most part, just specify types is the main thing
-* https://flow.org/en/docs/types/functions/
