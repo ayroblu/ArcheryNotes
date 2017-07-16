@@ -29,8 +29,7 @@ export default class LogMonitor extends Component {
   }
   componentWillReceiveProps(props){
     const newActionKeys = Object.keys(props.actionsById)
-    const oldActionKeys = Object.keys(this.props.actionsById)
-    if (newActionKeys.length !== oldActionKeys.length) {
+    if (newActionKeys.length !== this.state.actions.length) {
       const newActions = newActionKeys.reduce((a,n)=>{
         if (!a[n]){
           a[n] = {action: 1, state: 1}
