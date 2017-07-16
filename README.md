@@ -3,6 +3,30 @@ Archery Notes
 
 I want this to replace my ArcheryScorer app, just to show off my react native skills
 
+Commands
+--------
+```bash
+# Install everything initially
+yarn
+
+# To run Flow type checking (there's probably a watch function too) (starts a flow server)
+yarn run flow
+# When you're done
+yarn run flow stop
+
+# linter
+yarn lint
+
+# tests
+yarn test
+yarn test -- --watch #great for multi monitor
+yarn test -- --coverage # This one is kinda slow
+
+# run:
+react-native run-ios
+react-native run-android
+```
+
 Setup
 -----
 1. react-native-navigation - super buggy, many things missing, native.
