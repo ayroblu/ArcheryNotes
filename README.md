@@ -22,6 +22,7 @@ Setup
 10. Code push
 11. Push notifications
 12. iOS Support?
+13. Travis/CI support
 
 Notes
 -----
