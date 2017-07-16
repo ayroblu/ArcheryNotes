@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/LogMonitor.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> LogMonitor.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.3% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.3% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {Component} from 'react'
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableHighlight,
+  View,
+} from 'react-native'
+import moment from 'moment'
+import _ from 'lodash'
+import inspect from 'util-inspect'
+&nbsp;
+import {textStyle} from '../config'
+&nbsp;
+export default class LogMonitor extends Component {
+  static update = function() {
+    return {
+      initialScrollTop: <span class="fstat-no" title="function not covered" >()</span>=&gt;{},
+      consecutiveToggleStartId: <span class="fstat-no" title="function not covered" >()</span>=&gt;{}
+    }
+  }
+  componentWillMount(){
+    const actions = Object.keys(this.props.actionsById).reduce((a,n)=&gt;{
+      a[n] = {action: 1, state: 1}
+      return a
+    }, {})
+    this.state = {actions}
+  }
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillReceiveProps(props){
+    const newActionKeys = <span class="cstat-no" title="statement not covered" >Object.keys(props.actionsById)</span>
+<span class="cstat-no" title="statement not covered" >    if (newActionKeys.length !== this.state.actions.length) {</span>
+      const newActions = <span class="cstat-no" title="statement not covered" >newActionKeys.reduce(<span class="fstat-no" title="function not covered" >(a</span>,n)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >        if (!a[n]){</span>
+<span class="cstat-no" title="statement not covered" >          a[n] = {action: 1, state: 1}</span>
+        }
+<span class="cstat-no" title="statement not covered" >        return a</span>
+      }, this.state.actions)
+<span class="cstat-no" title="statement not covered" >      this.setState({actions: newActions})</span>
+    }
+  }
+<span class="fstat-no" title="function not covered" >  _d</span>ecAction(action){
+    const {actions} = <span class="cstat-no" title="statement not covered" >this.state</span>
+<span class="cstat-no" title="statement not covered" >    --actions[action.key].action</span>
+<span class="cstat-no" title="statement not covered" >    this.setState(actions)</span>
+  }
+<span class="fstat-no" title="function not covered" >  _i</span>ncAction(action){
+    const {actions} = <span class="cstat-no" title="statement not covered" >this.state</span>
+<span class="cstat-no" title="statement not covered" >    ++actions[action.key].action</span>
+<span class="cstat-no" title="statement not covered" >    this.setState(actions)</span>
+  }
+<span class="fstat-no" title="function not covered" >  _d</span>ecState(action){
+    const {actions} = <span class="cstat-no" title="statement not covered" >this.state</span>
+<span class="cstat-no" title="statement not covered" >    --actions[action.key].state</span>
+<span class="cstat-no" title="statement not covered" >    this.setState(actions)</span>
+  }
+<span class="fstat-no" title="function not covered" >  _i</span>ncState(action){
+    const {actions} = <span class="cstat-no" title="statement not covered" >this.state</span>
+<span class="cstat-no" title="statement not covered" >    ++actions[action.key].state</span>
+<span class="cstat-no" title="statement not covered" >    this.setState(actions)</span>
+  }
+  render(){
+    const actions = _.orderBy(Object.keys(this.props.actionsById), null, ['desc'])
+      .map(k=&gt;({...this.props.actionsById[k], key: k, state: this.props.computedStates[k].state, config: this.state.actions[k]}))
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;ScrollView&gt;
+          {actions.map((a, i)=&gt;(
+            &lt;View style={styles.line} key={i}&gt;
+              &lt;Text style={styles.textSmallRight}&gt;{moment(a.timestamp).toISOString()}&lt;/Text&gt;
+              &lt;Text style={styles.text}&gt;{a.key}: {a.action.type}&lt;/Text&gt;
+              &lt;View&gt;
+                &lt;Text style={styles.textSmall}&gt;{inspect(a.action, {depth: a.config.action})}&lt;/Text&gt;
+                &lt;View style={styles.foregroundRow}&gt;
+                  &lt;TouchableHighlight style={{flex: 1}} underlayColor='#0005' onPress={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >this._decAction(a)}</span>&gt;
+                    &lt;View style={{flex: 1}} /&gt;
+                  &lt;/TouchableHighlight&gt;
+                  &lt;TouchableHighlight style={{flex: 1}} underlayColor='#0005' onPress={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >this._incAction(a)}</span>&gt;
+                    &lt;View style={{flex: 1}} /&gt;
+                  &lt;/TouchableHighlight&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+              &lt;View&gt;
+                &lt;Text style={styles.textSmall}&gt;{inspect(a.state, {depth: a.config.state})}&lt;/Text&gt;
+                &lt;View style={styles.foregroundRow}&gt;
+                  &lt;TouchableHighlight style={{flex: 1}} underlayColor='#0005' onPress={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >this._decState(a)}</span>&gt;
+                    &lt;View style={{flex: 1}} /&gt;
+                  &lt;/TouchableHighlight&gt;
+                  &lt;TouchableHighlight style={{flex: 1}} underlayColor='#0005' onPress={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >this._incState(a)}</span>&gt;
+                    &lt;View style={{flex: 1}} /&gt;
+                  &lt;/TouchableHighlight&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          ))}
+        &lt;/ScrollView&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+&nbsp;
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#333'
+  , paddingTop: 20
+  , flex: 1
+  },
+  foregroundRow: {
+    position: 'absolute'
+  , top: 0
+  , left: 0
+  , right: 0
+  , bottom: 0
+  , flexDirection: 'row'
+  },
+  line: {
+    margin: 10
+  },
+  text: {
+    ...textStyle
+  , color: 'white'
+  },
+  textSmall: {
+    ...textStyle
+  , fontSize: 14
+  , color: 'white'
+  },
+  textSmallRight: {
+    ...textStyle
+  , fontSize: 12
+  , color: 'white'
+  , alignSelf: 'flex-end'
+  , textAlign: 'right'
+  },
+})
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 16 2017 23:53:09 GMT+1200 (NZST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
