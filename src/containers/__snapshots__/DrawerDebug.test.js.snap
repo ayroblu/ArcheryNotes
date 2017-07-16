@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
             }
           }
         >
-          2017-07-15T23:08:54.530Z
+          2017-02-14T12:51:48.000Z
         </Text>
         <Text
           accessible={true}
@@ -171,7 +171,7 @@ exports[`renders correctly 1`] = `
               }
             }
           >
-            { main: { text: 'thing' } }
+            { main: { text: 'thing' }, scoreSheet: { users: [Object] } }
           </Text>
           <View
             style={

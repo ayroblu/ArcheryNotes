@@ -3,6 +3,7 @@ import React from 'react'
 import {Provider} from 'react-redux'
 import DrawerDebug from './DrawerDebug'
 import configureStore from '../store'
+Date.now = jest.fn(() => 1487076708000)
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer'
