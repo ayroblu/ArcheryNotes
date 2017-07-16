@@ -1,79 +1,443 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<RCTScrollView
-  contentContainerStyle={
-    Object {
-      "alignItems": "center",
-    }
-  }
+<View
   style={
     Object {
       "flex": 1,
     }
   }
 >
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "alignItems": "center",
+      }
+    }
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#555",
+            "fontSize": 18,
+            "fontWeight": "300",
+          }
+        }
+      >
+        thing
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#555",
+            "fontSize": 18,
+            "fontWeight": "300",
+          }
+        }
+      >
+        Archery Notes
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#555",
+            "fontSize": 18,
+            "fontWeight": "300",
+          }
+        }
+      >
+        Probably should add a score card here
+      </Text>
+      <View
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "marginTop": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            9
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            8
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            7
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            6
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            5
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            4
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1.5,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            39
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "flex": 2,
+                "marginLeft": 4,
+                "marginRight": 4,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginBottom": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            9
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            8
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            7
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            6
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            5
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 1.5,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            35
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "#ddd",
+                "color": "#555",
+                "flex": 2,
+                "fontSize": 18,
+                "fontWeight": "300",
+                "marginLeft": 4,
+                "marginRight": 4,
+                "textAlign": "center",
+              }
+            }
+          >
+            74
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
   <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#555",
-          "fontSize": 18,
-          "fontWeight": "300",
-        }
-      }
-    >
-      thing
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#555",
-          "fontSize": 18,
-          "fontWeight": "300",
-        }
-      }
-    >
-      Archery Notes
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#555",
-          "fontSize": 18,
-          "fontWeight": "300",
-        }
-      }
-    >
-      Probably should add a score card here
-    </Text>
     <View
       style={
         Object {
-          "alignSelf": "stretch",
-          "marginTop": 10,
+          "flexDirection": "row",
+          "paddingLeft": 4,
         }
       }
     >
       <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "flexDirection": "row",
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
             "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
           }
         }
+        testID={undefined}
+        tvParallaxProperties={undefined}
       >
         <Text
           accessible={true}
@@ -82,18 +446,173 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
+              "textAlign": "center",
+            }
+          }
+        >
+          X
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#555",
+              "fontSize": 18,
+              "fontWeight": "300",
+              "textAlign": "center",
+            }
+          }
+        >
+          10
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#555",
+              "fontSize": 18,
+              "fontWeight": "300",
               "textAlign": "center",
             }
           }
         >
           9
         </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingLeft": 4,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -101,18 +620,54 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
           8
         </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -120,18 +675,54 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
           7
         </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -139,18 +730,63 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
           6
         </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingLeft": 4,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -158,18 +794,54 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
           5
         </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -177,58 +849,53 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
           4
         </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#ddd",
-              "color": "#555",
-              "flex": 1.5,
-              "fontSize": 18,
-              "fontWeight": "300",
-              "marginLeft": 4,
-              "textAlign": "center",
-            }
-          }
-        >
-          39
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "flex": 2,
-              "marginLeft": 4,
-              "marginRight": 4,
-            }
-          }
-        />
       </View>
       <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "flexDirection": "row",
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
             "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
           }
         }
+        testID={undefined}
+        tvParallaxProperties={undefined}
       >
         <Text
           accessible={true}
@@ -237,18 +904,63 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
-          9
+          3
         </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingLeft": 4,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -256,18 +968,54 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
-          8
+          2
         </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -275,18 +1023,54 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
-          7
+          1
         </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -294,18 +1078,63 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
-          6
+          M
         </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingLeft": 4,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#eee",
+            "elevation": 5,
+            "flex": 1,
+            "marginBottom": 4,
+            "marginRight": 4,
+            "opacity": 1,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "shadowColor": "#0005",
+            "shadowOffset": Object {
+              "height": 1,
+              "width": 1,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 5,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -313,76 +1142,17 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "backgroundColor": "#ddd",
               "color": "#555",
-              "flex": 1,
               "fontSize": 18,
               "fontWeight": "300",
-              "marginLeft": 4,
               "textAlign": "center",
             }
           }
         >
-          5
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#ddd",
-              "color": "#555",
-              "flex": 1,
-              "fontSize": 18,
-              "fontWeight": "300",
-              "marginLeft": 4,
-              "textAlign": "center",
-            }
-          }
-        />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#ddd",
-              "color": "#555",
-              "flex": 1.5,
-              "fontSize": 18,
-              "fontWeight": "300",
-              "marginLeft": 4,
-              "textAlign": "center",
-            }
-          }
-        >
-          35
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "#ddd",
-              "color": "#555",
-              "flex": 2,
-              "fontSize": 18,
-              "fontWeight": "300",
-              "marginLeft": 4,
-              "marginRight": 4,
-              "textAlign": "center",
-            }
-          }
-        >
-          74
+          undo
         </Text>
       </View>
     </View>
   </View>
-</RCTScrollView>
+</View>
 `;
