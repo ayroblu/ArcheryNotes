@@ -4,10 +4,7 @@ const initialState = {
   users: [{
     name: 'first'
   , scoreSheet: [{
-      scores: [9,8,7,6,5,4]
-    }, {
-      scores: [9,8,7,6,5,null]
-    , preTotal: 39
+      scores: [null, null, null, null, null, null]
     }]
   }]
 }

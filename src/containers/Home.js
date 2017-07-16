@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {
   View,
+  ScrollView,
   Text,
   StyleSheet,
   StatusBar,
@@ -44,7 +45,7 @@ class Home extends Component {
     const {users} = this.props.scoreSheet
     const rows = users[0].scoreSheet
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.flex} contentContainerStyle={styles.container}>
         <StatusBar barStyle="light-content" />
         <Text style={styles.text}>{text}</Text>
         <Text style={styles.text}>Archery Notes</Text>
@@ -54,7 +55,7 @@ class Home extends Component {
             this._renderRow(r,i)
           ))}
         </View>
-      </View>
+      </ScrollView>
     )
   }
 }
@@ -62,7 +63,9 @@ class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center'
-  , flex: 1
+  }
+, flex: {
+    flex: 1
   }
 , text: {
     ...textStyle
