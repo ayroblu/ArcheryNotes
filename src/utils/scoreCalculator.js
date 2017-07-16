@@ -1,9 +1,20 @@
 // @flow
 type ScoreRow = {
   preTotal?: number
-, scores: Array<?number>
+, scores: Array<?string>
 }
-export function addScore(scoreSheet: Array<ScoreRow>, score: number){
+
+export function scoreToVal(score):number{
+  switch (score) {
+    case 'X':
+      return 10
+    case 'M':
+      return 0
+    default:
+      return parseInt(score, 10)
+  }
+}
+export function addScore(scoreSheet: Array<ScoreRow>, score: string): Array<ScoreRow>{
   // parts: addRow, substituteScore in
   let newRow = false
   const newScoreSheet = scoreSheet.map((r,i)=>{
@@ -13,7 +24,7 @@ export function addScore(scoreSheet: Array<ScoreRow>, score: number){
     return {...r, scores: r.scores.map((c,i)=>i!==index ? c : score)}
   })
   if (newRow) {
-    const preTotal = newScoreSheet.slice(-1)[0].scores.reduce((a,n)=>a+n,0)
+    const preTotal = newScoreSheet.slice(-1)[0].scores.reduce((a,n)=>a+scoreToVal(n),0)
     newScoreSheet.push({
       preTotal
     , scores: initialiseRow()
@@ -21,7 +32,7 @@ export function addScore(scoreSheet: Array<ScoreRow>, score: number){
   }
   return newScoreSheet
 }
-export function undo(scoreSheet: Array<ScoreRow>){
+export function undo(scoreSheet: Array<ScoreRow>): Array<ScoreRow>{
   // parts: addRow, substituteScore in
   const isFirst = scoreSheet.slice(-1)[0].scores.indexOf(null) === 0
   if (isFirst && scoreSheet.length === 1) return scoreSheet
