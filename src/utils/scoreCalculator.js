@@ -4,7 +4,8 @@ type ScoreRow = {
 , scores: Array<?string>
 }
 
-export function scoreToVal(score):number{
+export function scoreToVal(score: ?string):number{
+  if (!score) return 0
   switch (score) {
     case 'X':
       return 10
@@ -24,7 +25,7 @@ export function addScore(scoreSheet: Array<ScoreRow>, score: string): Array<Scor
     return {...r, scores: r.scores.map((c,i)=>i!==index ? c : score)}
   })
   if (newRow) {
-    const preTotal = newScoreSheet.slice(-1)[0].scores.reduce((a,n)=>a+scoreToVal(n),0)
+    const preTotal:number = newScoreSheet.slice(-1)[0].scores.reduce((a,n)=>a+scoreToVal(n),0)
     newScoreSheet.push({
       preTotal
     , scores: initialiseRow()

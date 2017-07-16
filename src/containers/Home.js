@@ -10,11 +10,10 @@ import {
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
-import DevTools from '../components/DevTools'
 import {navButtons, onNavigatorEvent} from '../utils/nav'
 import * as mainActions from '../actions/main'
 import * as ssActions from '../actions/scoreSheet'
-import * as theme from '../theme'
+//import * as theme from '../theme'
 import * as sc from '../utils/scoreCalculator'
 import {textStyle} from '../config'
 
@@ -27,15 +26,15 @@ class Home extends Component {
   _addScore(score: string){
     const {users} = this.props.scoreSheet
     const scoreSheet = sc.addScore(users[0].scoreSheet, score)
-    const newUsers = users.map((u,i)=>({
+    const newUsers = users.map(u=>({
       ...u, scoreSheet
     }))
     this.props.ssActions.set({users: newUsers})
   }
-  _removeScore(score: string){
+  _removeScore(){
     const {users} = this.props.scoreSheet
-    const scoreSheet = sc.removeScore(users[0].scoreSheet)
-    const newUsers = users.map((u,i)=>({
+    const scoreSheet = sc.undo(users[0].scoreSheet)
+    const newUsers = users.map(u=>({
       ...u, scoreSheet
     }))
     this.props.ssActions.set({users: newUsers})

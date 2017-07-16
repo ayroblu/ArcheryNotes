@@ -12,7 +12,7 @@ import {bindActionCreators} from 'redux'
 
 import * as mainActions from '../actions/main'
 import {textStyle} from '../config'
-import * as theme from '../theme'
+//import * as theme from '../theme'
 
 class Drawer extends Component {
   _goTo(screen){

@@ -6,7 +6,6 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native'
-import stringify from 'json-stringify-safe'
 import moment from 'moment'
 import _ from 'lodash'
 import inspect from 'util-inspect'
@@ -14,7 +13,7 @@ import inspect from 'util-inspect'
 import {textStyle} from '../config'
 
 export default class LogMonitor extends Component {
-  static update = function(props, state={}, action) {
+  static update = function() {
     return {
       initialScrollTop: ()=>{},
       consecutiveToggleStartId: ()=>{}
